@@ -19,6 +19,11 @@ $(".select-player").on("click", obj => {
     location.reload()
 });
 
+$(".reset-status").on("click", obj => {
+    socket.emit("reset_player_status", 1);
+    location.reload()
+});
+
 window.onload = function(){
     socket.emit("get_lobby_status", 0);
 
