@@ -4,6 +4,14 @@ player_data['ryu'] = 0
 player_data['guile'] = 1
 player_data['ehonda'] = 2
 player_data['bianka'] = 3
+player_data['ken'] = 4
+player_data['chunli'] = 5
+player_data['zangief'] = 6
+player_data['dhalsim'] = 7
+player_data['balrog'] = 8
+player_data['vega'] = 9
+player_data['sagat'] = 10
+player_data['mbison'] = 11
 $(".select-player").on("click", obj => {
 	//alert($(obj.currentTarget).attr("id"));
     player_id = $(obj.currentTarget).attr("id")
