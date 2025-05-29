@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
+    socket.on('reset_player_status', id => {
+        mod_gvar.reset_player_status()
+	});
+
     socket.on('set_selected_player', id => {
         tmp_str = id.split("-")
         mod_gvar.set_player_selected(tmp_str[0], tmp_str[1], tmp_str[2])
